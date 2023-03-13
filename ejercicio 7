@@ -1,0 +1,27 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] arreglo = {10, 7, 8, 6, 5, 3};
+        boolean encontrados = false;
+        int num1 = 0;
+        int num2 = 0;
+
+        for (int i = 0; i < arreglo.length; i++) {
+            for (int j = i + 1; j < arreglo.length; j++) {
+                if (arreglo[i] + arreglo[j] == 10) {
+                    num1 = arreglo[i];
+                    num2 = arreglo[j];
+                    encontrados = true;
+                    break;
+                }
+            }
+            if (encontrados) {
+                break;
+            }
+        }
+        if (encontrados) {
+            System.out.println(num1 + " " + num2);
+        } else {
+            System.out.println("No se encontro.");
+        }
+    }
+}
