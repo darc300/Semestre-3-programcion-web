@@ -52,3 +52,5 @@ if tiene_reserva.lower() in ["sí", "si"]:
 precio_final = (precio_base * num_boletas - descuento_boletas) * (1 - descuento_tarjeta)
 
 print(f"El precio final para {num_boletas} boleta(s) en la sala {tipo_sala} a las {hora_dia}{sufijo} y con {tipo_pago} como medio de pago y reserva {'sí' if tiene_reserva.lower() in ['sí', 'si'] else 'no'} es: {precio_final + recargo_reserva:,.0f} pesos.")
+
+print ("creadores Diego Rueda, Cristian Gonzales")
